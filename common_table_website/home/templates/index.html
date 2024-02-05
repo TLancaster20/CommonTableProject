@@ -12,7 +12,7 @@
 	<!--Header Menu at Top of Page-->
 	<div class="header">
 	<!--https://stackoverflow.com/questions/20416144/add-a-picture-logo-in-a-html-list-navigation-menu-->
-		<a href="#default" class="logo"><img src="{% static '/images/Logo.png' %}" width=50 height=50>&nbsp &nbsp Insert Common Table Church RVA</a>
+		<a href="{% url 'home' %}" class="logo"><img src="{% static '/images/Logo.png' %}" width=50 height=50>&nbsp &nbsp Insert Common Table Church RVA</a>
 		<div class="header-right">
 			<a class="active">Home</a>
 			<a href="{% url 'about' %}">About Us</a>
@@ -94,5 +94,13 @@ Main Page
 ---Volunteer
 --Prayer Requests
 --Give
+
+
+**Things to work on:
+==URL exception handling
+==Formatting landing pages for base pages
+==Drop boxes for nav bar
+==Calendar
+==Embed map? 
 -->
 </html>
