@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+
+{% load static %}
+
+<link rel="stylesheet" href="{% static 'css/styles.css' %}">
+<link rel="stylesheet" href="{% static 'css/index.css' %}">
+
+<head>
+
+	<title>Common Table Church RVA</title>
+	<link rel="icon" href="{% static '/images/Logo.png' %}">
+	<!--Header Menu at Top of Page-->
+	<div class="header">
+	<!--https://stackoverflow.com/questions/20416144/add-a-picture-logo-in-a-html-list-navigation-menu-->
+		<a href="#default" class="logo"><img src="{% static '/images/Logo.png' %}" width=50 height=50>&nbsp &nbsp Insert Common Table Church RVA</a>
+		<div class="header-right">
+			<a class="active">Home</a>
+			<a href="{% url 'about' %}">About Us</a>
+			<a href="{% url 'find' %}">Find and Connect</a>
+			<a href="{% url 'community' %}">Our Community</a>
+		</div>
+	</div>
+<!-- https://www.w3schools.com/howto/howto_css_responsive_header.asp-->
+</head>
+
+<body>
+	<div class=mainone>
+		<p> Sunday // 9am & 11am // 910 South Harrison</p>
+			<!--<h1> Common Table </h1
+		<p> Misc Things: meeting time, abbreviated mission statement/vision, first steps page, footer with socials</p>-->
+	</div>
+
+	<div class=maintwo>
+		<h1>In RVA as it is in heaven.</h1>
+		<p>Common Table was created from two churches in Richmond, Virginia, uniting as one in worship and service. In the weekly celebration of the Eucharist (Holy Communion or Lord’s Supper), we witness different people, traditions, and histories joining together to bear a vibrant, diverse, and beautiful image of God. We are renamed and reshaped by the table manners of Jesus Christ who invites, welcomes, nourishes, and sends us to love our neighbors for the sake of mercy and equity – in RVA as it is in heaven.</p>
+	</div>
+
+	<div class=mainthree>
+		<p>First Steps</p>
+	</div>
+	<!--<script>
+  		new Splide( '#image-carousel' ).mount();
+	</script>-->
+</body>
+
+
+<footer>
+	<div class=links> Common Table Church &nbsp &nbsp || &nbsp &nbsp
+		<a href=“tel:804-250-5109”><img src="{% static '/images/tp.png' %}" width=12.5 height=12.5></a>
+		&nbsp &nbsp
+		<a href = "mailto: info@commontablerichmond.com"><img src="{% static '/images/em.png' %}" width=12.5 height=12.5></a>
+		&nbsp &nbsp || &nbsp &nbsp
+		<a href="https://www.facebook.com/CommonTableRVA"><img src="{% static '/images/fb.png' %}" width=12.5 height=12.5></a>
+		&nbsp &nbsp
+    	<a href="https://www.instagram.com/commontablerva/"><img src="{% static '/images/ig.png' %}" width=12.5 height=12.5></a>
+    	&nbsp &nbsp || &nbsp &nbsp @2023 AJLancaster
+    </div>
+</footer>
+
+<!-- 
+Common Table Main Page
+-About Us
+-What to Expect
+-Give
+-
+-Home
+--New Here
+--Take next steps
+--Prayer Requests
+-Groups
+-Sign up
+-Give
+-Calendar
+-Log in
+
+Main Page
+-About Us
+--Who we are
+--Pastoral Staff
+--Council / staff
+--What we believe/statement of faith
+--Our values
+
+-Find Us
+--Address/Meeting Time
+--New Here
+--What to Expect
+--Sign up for newsletter
+--Socials
+
+-Community
+--Take Next Steps
+---Groups
+---Volunteer
+--Prayer Requests
+--Give
+-->
+</html>

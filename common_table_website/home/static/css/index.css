@@ -1,0 +1,84 @@
+/* Old Format*/
+.mainone {
+  /*background-image: url('./Images/mainpage.png');*/
+  background-repeat: no-repeat;
+  background-attachment: scroll;
+  background-position: center;
+  background-size: cover;
+  height:1000px;
+  margin-top: -30px;
+  margin-bottom: -40px;
+  margin-left: -15px;
+  margin-right: -15px;
+}
+/*https://www.w3schools.com/html/html_images_background.asp*/
+
+.mainone p{
+  text-align: center;
+  font-family: Arial;
+  font-size: 24px;
+  color: #FFFFFF;
+  position:relative;
+  top: 925px;
+}
+
+.maintwo{
+  /*background-image: url('./Images/mainone.jpg');*/
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: center;
+  background-size: cover;
+  margin-top: -30px;
+  margin-bottom: -50px;
+  margin-left: -15px;
+  margin-right:-15px;
+  height:400px;
+}
+
+.maintwo h1{
+  text-align: center;
+  font-family: Arial;
+  font-size: 48px;
+  color: #FFFFFF;
+  position:relative;
+  top: 50px;
+}
+
+.maintwo p{
+  text-align: center;
+  font-family: Arial;
+  font-size: 24px;
+  color: #FFFFFF;
+  position:relative;
+  margin-left: 100px;
+  margin-right:100px;
+  top: 100px;
+}
+/* https://www.w3schools.com/css/css_font.asp FONT TYPES*/
+
+.mainthree{
+  /*background-image: url('./Images/mainone.jpg');*/
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: center;
+  background-size: cover;
+  margin-top: -30px;
+  margin-bottom: -50px;
+  margin-left: -15px;
+  margin-right:-15px;
+  height:400px;
+}
+
+.mainthree p{
+  text-align: center;
+  font-family: Arial;
+  font-size: 24px;
+  color: #000000;
+  position:relative;
+  top: 100px;
+}
+
+.links{
+  text-align:  center;
+  font-family: Arial;
+}
