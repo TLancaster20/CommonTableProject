@@ -1,4 +1,5 @@
 <!DOCTYPE html>
+<link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
 
 {% load static %}
 
@@ -10,29 +11,56 @@
 	<title>Common Table Church RVA</title>
 	<link rel="icon" href="{% static '/images/Logo.png' %}">
 	<!--Header Menu at Top of Page-->
-	<div class="header">
+
+	<div class="navbar">
 	<!--https://stackoverflow.com/questions/20416144/add-a-picture-logo-in-a-html-list-navigation-menu-->
-		<a href="{% url 'home' %}" class="logo"><img src="{% static '/images/Logo.png' %}" width=50 height=50>&nbsp &nbsp Insert Common Table Church RVA</a>
-		<div class="header-right">
-			<a class="active">Home</a>
+		<a href="{% url 'home' %}" class="logo"><img src="{% static '/images/Logo.png' %}" width=50 height=50>&nbsp &nbsp Common Table Church RVA</a>
+		<div class="navbar-right">
 			<div class="dropdown">
-    			<button class="dropbtn">Dropdown
-     				 <i class="fa fa-caret-down"></i>
-    			</button>
+				<button class="dropbtn">About
+					<i class="bx bx-chevron-down"></i>
+				</button>
 				<div class="dropdown-content">
-					<a href="{% url 'about' %}">About Us</a>
-				 	<a href="{% url 'pastoral_team'%}">Pastoral Team</a>
-      				<a href="{% url 'staff_and_council' %}">Staff and Church Council Members</a>
-					<a href="{% url 'beliefs' %}">What We Believe</a>
-					<a href="{% url 'mission_vision_values' %}">Mission, Vision, and Values</a>
+					<ul>
+						<a class="dropdown-link" href="{% url 'about' %}">About Us</a>
+						<a class="dropdown-link" href="{% url 'pastoral_team'%}">Pastoral Team</a>
+						<a class="dropdown-link" href="{% url 'staff_and_council' %}">Staff and Church Council Members</a>
+						<a class="dropdown-link" href="{% url 'beliefs' %}">What We Believe</a>
+						<a class="dropdown-link" href="{% url 'mission_vision_values' %}">Mission, Vision, and Values</a>
+					</ul>
 				</div>
-  			</div>
-			<!-- https://www.w3schools.com/howto/howto_css_dropdown_navbar.asp#:~:text=Use%20any%20element%20to%20open,dropdown%20menu%20correctly%20with%20CSS. -->
-		<!---
-		--What we believe/statement of faith
-		--Our values-->
-			<a href="{% url 'find' %}">Find and Connect</a>
-			<a href="{% url 'community' %}">Our Community</a>
+			</div>
+		<!-- https://www.w3schools.com/howto/howto_css_dropdown_navbar.asp#:~:text=Use%20any%20element%20to%20open,dropdown%20menu%20correctly%20with%20CSS. -->
+			<div class="dropdown">
+				<button class="dropbtn">Find and Connect
+					<i class="bx bx-chevron-down"></i>
+				</button>
+				<div class="dropdown-content">
+					<ul>
+						<a class="dropdown-link" href="{% url 'meetings' %}">Weekly Services</a>
+						<a class="dropdown-link" href="{% url 'new'%}">New Here</a>
+						<a class="dropdown-link" href="{% url 'what_to_expect' %}">What to Expect</a>
+						<a class="dropdown-link" href="{% url 'news' %}">Newsletter</a>
+						<a class="dropdown-link" href="{% url 'social' %}">Social Media</a>
+					</ul>
+				</div>
+			</div>
+			<div class="dropdown">
+				<button class="dropbtn">Our Community
+					<i class="bx bx-chevron-down"></i>
+				</button>
+				<div class="dropdown-content">
+					<ul>
+						<a class="dropdown-link" href="{% url 'next_steps' %}">Take Next Steps</a>
+						<a class="dropdown-link" href="{% url 'groups'%}">Small Groups</a>
+						<a class="dropdown-link" href="{% url 'volunteer' %}">Volunteer</a>
+						<a class="dropdown-link" href="{% url 'prayer' %}">Prayer Requests</a>
+						<a class="dropdown-link" href="{% url 'give' %}">Give</a>
+					</ul>
+				</div>
+			</div>
+
+
 		</div>
 	</div>
 <!-- https://www.w3schools.com/howto/howto_css_responsive_header.asp-->
@@ -91,23 +119,6 @@ Common Table Main Page
 -Give
 -Calendar
 -Log in
-
-Main Page
-
-
--Find Us
---Address/Meeting Time
---New Here
---What to Expect
---Sign up for newsletter
---Socials
-
--Community
---Take Next Steps
----Groups
----Volunteer
---Prayer Requests
---Give
 
 
 **Things to work on:

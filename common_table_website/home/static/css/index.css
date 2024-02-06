@@ -1,6 +1,6 @@
 /* Old Format*/
 .mainone {
-  /*background-image: url('./Images/mainpage.png');*/
+  background-image: url('../images/mainpage.png');
   background-repeat: no-repeat;
   background-attachment: scroll;
   background-position: center;
@@ -23,7 +23,7 @@
 }
 
 .maintwo{
-  /*background-image: url('./Images/mainone.jpg');*/
+  background-image: url('../images/mainone.jpg');
   background-repeat: no-repeat;
   background-attachment: fixed;
   background-position: center;
@@ -57,7 +57,7 @@
 /* https://www.w3schools.com/css/css_font.asp FONT TYPES*/
 
 .mainthree{
-  /*background-image: url('./Images/mainone.jpg');*/
+  /*background-image: url('../images/mainone.jpg');*/
   background-repeat: no-repeat;
   background-attachment: fixed;
   background-position: center;
