@@ -15,7 +15,22 @@
 		<a href="{% url 'home' %}" class="logo"><img src="{% static '/images/Logo.png' %}" width=50 height=50>&nbsp &nbsp Insert Common Table Church RVA</a>
 		<div class="header-right">
 			<a class="active">Home</a>
-			<a href="{% url 'about' %}">About Us</a>
+			<div class="dropdown">
+    			<button class="dropbtn">Dropdown
+     				 <i class="fa fa-caret-down"></i>
+    			</button>
+				<div class="dropdown-content">
+					<a href="{% url 'about' %}">About Us</a>
+				 	<a href="{% url 'pastoral_team'%}">Pastoral Team</a>
+      				<a href="{% url 'staff_and_council' %}">Staff and Church Council Members</a>
+					<a href="{% url 'beliefs' %}">What We Believe</a>
+					<a href="{% url 'mission_vision_values' %}">Mission, Vision, and Values</a>
+				</div>
+  			</div>
+			<!-- https://www.w3schools.com/howto/howto_css_dropdown_navbar.asp#:~:text=Use%20any%20element%20to%20open,dropdown%20menu%20correctly%20with%20CSS. -->
+		<!---
+		--What we believe/statement of faith
+		--Our values-->
 			<a href="{% url 'find' %}">Find and Connect</a>
 			<a href="{% url 'community' %}">Our Community</a>
 		</div>
@@ -31,8 +46,12 @@
 	</div>
 
 	<div class=maintwo>
-		<h1>In RVA as it is in heaven.</h1>
-		<p>Common Table was created from two churches in Richmond, Virginia, uniting as one in worship and service. In the weekly celebration of the Eucharist (Holy Communion or Lord’s Supper), we witness different people, traditions, and histories joining together to bear a vibrant, diverse, and beautiful image of God. We are renamed and reshaped by the table manners of Jesus Christ who invites, welcomes, nourishes, and sends us to love our neighbors for the sake of mercy and equity – in RVA as it is in heaven.</p>
+		<h1>In <i>RVA</i> as it is in <i>heaven.</i></h1>
+		<p>Common Table was created from two churches in Richmond, Virginia, uniting as one in worship and service. In
+			the weekly celebration of the Eucharist (Holy Communion or Lord’s Supper), we witness different people,
+			traditions, and histories joining together to bear a vibrant, diverse, and beautiful image of God. We are
+			renamed and reshaped by the table manners of Jesus Christ who invites, welcomes, nourishes, and sends us to
+			love our neighbors for the sake of mercy and equity – in RVA as it is in heaven.</p>
 	</div>
 
 	<div class=mainthree>
@@ -74,12 +93,7 @@ Common Table Main Page
 -Log in
 
 Main Page
--About Us
---Who we are
---Pastoral Staff
---Council / staff
---What we believe/statement of faith
---Our values
+
 
 -Find Us
 --Address/Meeting Time
@@ -101,6 +115,6 @@ Main Page
 ==Formatting landing pages for base pages
 ==Drop boxes for nav bar
 ==Calendar
-==Embed map? 
+==Embed map?
 -->
 </html>
