@@ -47,11 +47,11 @@
 				</button>
 				<div class="dropdown-content">
 					<ul>
-						<a class="dropdown-link" href="{% url 'next_steps' %}">Take Next Steps</a>
-						<a class="dropdown-link" href="{% url 'groups'%}">Small Groups</a>
-						<a class="dropdown-link" href="{% url 'volunteer' %}">Volunteer</a>
-						<a class="dropdown-link" href="{% url 'prayer' %}">Prayer Requests</a>
-						<a class="dropdown-link" href="{% url 'give' %}">Give</a>
+						<a href="{% url 'next_steps' %}">Take Next Steps</a>
+						<a href="{% url 'groups'%}">Small Groups</a>
+						<a href="{% url 'volunteer' %}">Volunteer</a>
+						<a href="{% url 'prayer' %}">Prayer Requests</a>
+						<a href="{% url 'give' %}">Give</a>
 					</ul>
 				</div>
 			</div>
@@ -65,7 +65,9 @@
 </body>
 
 <footer>
-	<div class=links> Common Table Church &nbsp &nbsp || &nbsp &nbsp
+	<div class=links>
+		<a href="{% url 'home' %}">Common Table Church</a>
+		&nbsp &nbsp || &nbsp &nbsp
 		<a href=“tel:804-250-5109”><img src="{% static '/images/tp.png' %}" width=12.5 height=12.5></a>
 		&nbsp &nbsp
 		<a href = "mailto: info@commontablerichmond.com"><img src="{% static '/images/em.png' %}" width=12.5 height=12.5></a>
@@ -73,7 +75,7 @@
 		<a href="https://www.facebook.com/CommonTableRVA"><img src="{% static '/images/fb.png' %}" width=12.5 height=12.5></a>
 		&nbsp &nbsp
     	<a href="https://www.instagram.com/commontablerva/"><img src="{% static '/images/ig.png' %}" width=12.5 height=12.5></a>
-    	&nbsp &nbsp || &nbsp &nbsp @2023 AJLancaster
+    	&nbsp &nbsp || &nbsp &nbsp @2024 AJLancaster
     </div>
 </footer>
 </html>
