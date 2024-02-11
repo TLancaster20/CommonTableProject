@@ -4,7 +4,9 @@
 }
 
 #page-container{
-    min-height:100vh;
+    min-height:97vh;
+    display: flex;
+    flex-direction: column;
 }
 
 /* Style the header with a grey background and some padding */
@@ -98,22 +100,24 @@
     z-index:-1;
 }
 /*https://www.freecodecamp.org/news/how-to-keep-your-footer-where-it-belongs-59c6aa05c59c/ trying to fix footer position*/
-#footer{
-  position:fixed;
-  bottom: 0;
-  text-align:  center;
-  font-family: Arial;
-
+footer{
+  position:relative;
+  margin-top: auto;
   overflow: hidden;
   background-color: #f1f1f1;
   width: 100vw;
   padding: 10px;
+}
 
+#footer-elements{
+  text-align:  center;
+  font-family: Arial;
   display:flex;
   flex-direction:row;
   justify-content: center;
 }
 
-#footer a {
+#footer-elements a {
   text-decoration: none;
+  color:black;
 }
