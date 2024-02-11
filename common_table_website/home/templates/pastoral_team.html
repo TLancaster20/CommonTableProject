@@ -61,7 +61,12 @@
 </head>
 
 <body>
-	<h1>404 Error! This page does not exist!</h1>
+	<h1>Meet Our Pastoral Team!</h1>
+    <ul>
+        {% for x in pastoral_staff %}
+            <li>{{x.firstname}} {{x.lastname}} {{x.pronouns}}</li>
+        {% endfor %}
+    </ul>
 </body>
 
 <footer>

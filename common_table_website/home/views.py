@@ -1,6 +1,7 @@
 from django.shortcuts import render
 from django.http import HttpResponse
 from django.template import loader
+from .models import StaffProfile, PastoralProfile
 
 # Home App is designed to run and manage static pages creating the base website
 
@@ -16,13 +17,21 @@ def about(request):
 
 
 def pastoral(request):
+    pastoral_staff = PastoralProfile.objects.all().values()
     template = loader.get_template('pastoral_team.html')
-    return HttpResponse(template.render())
+    context = {
+        'pastoral_staff': pastoral_staff,
+    }
+    return HttpResponse(template.render(context, request))
 
 
 def staff(request):
+    staff_team = StaffProfile.objects.all().values()
     template = loader.get_template('staff_and_council.html')
-    return HttpResponse(template.render())
+    context = {
+        'staff_team': staff_team,
+    }
+    return HttpResponse(template.render(context, request))
 
 
 def beliefs(request):
