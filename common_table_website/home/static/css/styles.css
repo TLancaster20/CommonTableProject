@@ -93,6 +93,7 @@
     min-height: 100vh;
 }
 
+/*https://www.freecodecamp.org/news/how-to-keep-your-footer-where-it-belongs-59c6aa05c59c/ trying to fix footer position*/
 #footer{
   position:absolute;
   bottom: 0;
