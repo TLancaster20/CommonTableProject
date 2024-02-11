@@ -1,71 +1,69 @@
 <!DOCTYPE html>
 
 {% load static %}
-
-<link rel="stylesheet" href="{% static 'css/styles.css' %}">
-
 <head>
-
+	<link rel="stylesheet" href="{% static 'css/styles.css' %}">
 	<title>Common Table Church RVA</title>
 	<link rel="icon" href="{% static '/images/Logo.png' %}">
-	<!--Header Menu at Top of Page-->
-	<div class="navbar">
-	<!--https://stackoverflow.com/questions/20416144/add-a-picture-logo-in-a-html-list-navigation-menu-->
-		<a href="{% url 'home' %}" class="logo"><img src="{% static '/images/Logo.png' %}" width=50 height=50>&nbsp &nbsp Common Table Church RVA</a>
-		<div class="navbar-right">
-			<div class="dropdown">
-				<button class="dropbtn">About
-					<i class="bx bx-chevron-down"></i>
-				</button>
-				<div class="dropdown-content">
-					<ul>
-						<a class="dropdown-link" href="{% url 'about' %}">About Us</a>
-						<a class="dropdown-link" href="{% url 'pastoral_team'%}">Pastoral Team</a>
-						<a class="dropdown-link" href="{% url 'staff_and_council' %}">Staff and Church Council Members</a>
-						<a class="dropdown-link" href="{% url 'beliefs' %}">What We Believe</a>
-						<a class="dropdown-link" href="{% url 'mission_vision_values' %}">Mission, Vision, and Values</a>
-					</ul>
+</head>
+
+<body>
+	<div id="page-container">
+		<!--Header Menu at Top of Page-->
+		<div id="navbar">
+		<!--https://stackoverflow.com/questions/20416144/add-a-picture-logo-in-a-html-list-navigation-menu-->
+			<a href="{% url 'home' %}" class="logo"><img src="{% static '/images/Logo.png' %}" width=50 height=50>&nbsp &nbsp Common Table Church RVA</a>
+			<div id="navbar-right">
+				<div class="dropdown">
+					<button class="dropbtn">About
+						<i class="bx bx-chevron-down"></i>
+					</button>
+					<div class="dropdown-content">
+						<ul>
+							<a href="{% url 'about' %}">About Us</a>
+							<a href="{% url 'pastoral_team'%}">Pastoral Team</a>
+							<a href="{% url 'staff_and_council' %}">Staff and Church Council Members</a>
+							<a href="{% url 'beliefs' %}">What We Believe</a>
+							<a href="{% url 'mission_vision_values' %}">Mission, Vision, and Values</a>
+						</ul>
+					</div>
 				</div>
-			</div>
-			<div class="dropdown">
-				<button class="dropbtn">Find and Connect
-					<i class="bx bx-chevron-down"></i>
-				</button>
-				<div class="dropdown-content">
-					<ul>
-						<a class="dropdown-link" href="{% url 'meetings' %}">Weekly Services</a>
-						<a class="dropdown-link" href="{% url 'new'%}">New Here</a>
-						<a class="dropdown-link" href="{% url 'what_to_expect' %}">What to Expect</a>
-						<a class="dropdown-link" href="{% url 'news' %}">Newsletter</a>
-						<a class="dropdown-link" href="{% url 'social' %}">Social Media</a>
-					</ul>
+				<div class="dropdown">
+					<button class="dropbtn">Find and Connect
+						<i class="bx bx-chevron-down"></i>
+					</button>
+					<div class="dropdown-content">
+						<ul>
+							<a href="{% url 'meetings' %}">Weekly Services</a>
+							<a href="{% url 'new'%}">New Here</a>
+							<a href="{% url 'what_to_expect' %}">What to Expect</a>
+							<a href="{% url 'news' %}">Newsletter</a>
+							<a href="{% url 'social' %}">Social Media</a>
+						</ul>
+					</div>
 				</div>
-			</div>
-			<div class="dropdown">
-				<button class="dropbtn">Our Community
-					<i class="bx bx-chevron-down"></i>
-				</button>
-				<div class="dropdown-content">
-					<ul>
+				<div class="dropdown">
+					<button class="dropbtn">Our Community
+						<i class="bx bx-chevron-down"></i>
+					</button>
+					<div class="dropdown-content">
 						<a href="{% url 'next_steps' %}">Take Next Steps</a>
 						<a href="{% url 'groups'%}">Small Groups</a>
 						<a href="{% url 'volunteer' %}">Volunteer</a>
 						<a href="{% url 'prayer' %}">Prayer Requests</a>
 						<a href="{% url 'give' %}">Give</a>
-					</ul>
+					</div>
 				</div>
 			</div>
 		</div>
 	</div>
 <!-- https://www.w3schools.com/howto/howto_css_responsive_header.asp-->
-</head>
 
-<body>
-	{% block content %} {% endblock %}
-</body>
+	<div>
+		{% block content %} {% endblock %}
+	</div>
 
-<footer>
-	<div class=links>
+	<div id="footer">
 		<a href="{% url 'home' %}">Common Table Church</a>
 		&nbsp &nbsp || &nbsp &nbsp
 		<a href=“tel:804-250-5109”><img src="{% static '/images/tp.png' %}" width=12.5 height=12.5></a>
@@ -74,8 +72,9 @@
 		&nbsp &nbsp || &nbsp &nbsp
 		<a href="https://www.facebook.com/CommonTableRVA"><img src="{% static '/images/fb.png' %}" width=12.5 height=12.5></a>
 		&nbsp &nbsp
-    	<a href="https://www.instagram.com/commontablerva/"><img src="{% static '/images/ig.png' %}" width=12.5 height=12.5></a>
-    	&nbsp &nbsp || &nbsp &nbsp @2024 AJLancaster
+		<a href="https://www.instagram.com/commontablerva/"><img src="{% static '/images/ig.png' %}" width=12.5 height=12.5></a>
+		&nbsp &nbsp || &nbsp &nbsp @2024 AJLancaster
     </div>
-</footer>
+</body>
+
 </html>
