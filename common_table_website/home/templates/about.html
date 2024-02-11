@@ -1,68 +1,5 @@
-<!DOCTYPE html>
-
-{% load static %}
-
-<link rel="stylesheet" href="{% static 'css/styles.css' %}">
-
-<head>
-
-	<title>About Us</title>
-	<link rel="icon" href="{% static '/images/Logo.png' %}">
-	<!--Header Menu at Top of Page-->
-	<div class="navbar">
-	<!--https://stackoverflow.com/questions/20416144/add-a-picture-logo-in-a-html-list-navigation-menu-->
-		<a href="{% url 'home' %}" class="logo"><img src="{% static '/images/Logo.png' %}" width=50 height=50>&nbsp
-			&nbsp Common Table Church RVA</a>
-		<div class="navbar-right">
-			<div class="dropdown">
-				<button class="dropbtn" >About
-					<i class="bx bx-chevron-down"></i>
-				</button>
-				<div class="dropdown-content">
-					<ul>
-						<a class="dropdown-link" href="{% url 'about' %}">About Us</a>
-						<a class="dropdown-link" href="{% url 'pastoral_team'%}">Pastoral Team</a>
-						<a class="dropdown-link" href="{% url 'staff_and_council' %}">Staff and Church Council Members</a>
-						<a class="dropdown-link" href="{% url 'beliefs' %}">What We Believe</a>
-						<a class="dropdown-link" href="{% url 'mission_vision_values' %}">Mission, Vision, and Values</a>
-					</ul>
-				</div>
-			</div>
-		<!-- https://www.w3schools.com/howto/howto_css_dropdown_navbar.asp#:~:text=Use%20any%20element%20to%20open,dropdown%20menu%20correctly%20with%20CSS. -->
-			<div class="dropdown">
-				<button class="dropbtn">Find and Connect
-					<i class="bx bx-chevron-down"></i>
-				</button>
-				<div class="dropdown-content">
-					<ul>
-						<a class="dropdown-link" href="{% url 'meetings' %}">Weekly Services</a>
-						<a class="dropdown-link" href="{% url 'new'%}">New Here</a>
-						<a class="dropdown-link" href="{% url 'what_to_expect' %}">What to Expect</a>
-						<a class="dropdown-link" href="{% url 'news' %}">Newsletter</a>
-						<a class="dropdown-link" href="{% url 'social' %}">Social Media</a>
-					</ul>
-				</div>
-			</div>
-			<div class="dropdown">
-				<button class="dropbtn">Our Community
-					<i class="bx bx-chevron-down"></i>
-				</button>
-				<div class="dropdown-content">
-					<ul>
-						<a class="dropdown-link" href="{% url 'next_steps' %}">Take Next Steps</a>
-						<a class="dropdown-link" href="{% url 'groups'%}">Small Groups</a>
-						<a class="dropdown-link" href="{% url 'volunteer' %}">Volunteer</a>
-						<a class="dropdown-link" href="{% url 'prayer' %}">Prayer Requests</a>
-						<a class="dropdown-link" href="{% url 'give' %}">Give</a>
-					</ul>
-				</div>
-			</div>
-		</div>
-	</div>
-<!-- https://www.w3schools.com/howto/howto_css_responsive_header.asp-->
-</head>
-
-<body>
+{% extends "base.html" %}
+{% block content %}
 	<h1>A TABLE OF TRANSFORMATION</h1>
 	<p>Common Table was created from two churches in Richmond, Virginia, uniting as one in worship and service. In the
 		weekly celebration of the Eucharist (Holy Communion or Lord’s Supper), we witness different people, traditions,
@@ -98,17 +35,4 @@
 		acknowledge that we live in a world of profound social, economic, and political inequities. As followers of
 		Jesus, we commit ourselves to the pursuit of justice and pledge to stand in solidarity with all who are
 		marginalized and oppressed.</p>
-</body>
-
-<footer>
-	<div class=links> Common Table Church &nbsp &nbsp || &nbsp &nbsp
-		<a href=“tel:804-250-5109”><img src="{% static '/images/tp.png' %}" width=12.5 height=12.5></a>
-		&nbsp &nbsp
-		<a href = "mailto: info@commontablerichmond.com"><img src="{% static '/images/em.png' %}" width=12.5 height=12.5></a>
-		&nbsp &nbsp || &nbsp &nbsp
-		<a href="https://www.facebook.com/CommonTableRVA"><img src="{% static '/images/fb.png' %}" width=12.5 height=12.5></a>
-		&nbsp &nbsp
-    	<a href="https://www.instagram.com/commontablerva/"><img src="{% static '/images/ig.png' %}" width=12.5 height=12.5></a>
-    	&nbsp &nbsp || &nbsp &nbsp @2023 AJLancaster
-    </div>
-</footer>
+{% endblock %}
