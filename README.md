@@ -9,3 +9,5 @@ This is not really a readme yet but more of creating a list of musings and ideas
 --Fixed footer bar
 --404 page look
 --More database work/apps once I get those things functioning
+--Simplify css
+--Finish setting up base.html so can edit and format across site
