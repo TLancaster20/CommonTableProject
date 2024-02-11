@@ -6,10 +6,8 @@
   background-position: center;
   background-size: cover;
   height:1000px;
-  margin-top: -30px;
-  margin-bottom: -40px;
-  margin-left: -15px;
-  margin-right: -15px;
+  position:relative;
+  width:100vw;
 }
 /*https://www.w3schools.com/html/html_images_background.asp*/
 
@@ -28,11 +26,9 @@
   background-attachment: fixed;
   background-position: center;
   background-size: cover;
-  margin-top: -30px;
-  margin-bottom: -50px;
-  margin-left: -15px;
-  margin-right:-15px;
   height:400px;
+  position:relative;
+  width:100vw;
 }
 
 .maintwo h1{
@@ -55,30 +51,3 @@
   top: 100px;
 }
 /* https://www.w3schools.com/css/css_font.asp FONT TYPES*/
-
-.mainthree{
-  /*background-image: url('../images/mainone.jpg');*/
-  background-repeat: no-repeat;
-  background-attachment: fixed;
-  background-position: center;
-  background-size: cover;
-  margin-top: -30px;
-  margin-bottom: -50px;
-  margin-left: -15px;
-  margin-right:-15px;
-  height:400px;
-}
-
-.mainthree p{
-  text-align: center;
-  font-family: Arial;
-  font-size: 24px;
-  color: #000000;
-  position:relative;
-  top: 100px;
-}
-
-.links{
-  text-align:  center;
-  font-family: Arial;
-}

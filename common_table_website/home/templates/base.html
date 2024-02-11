@@ -12,7 +12,8 @@
 		<!--Header Menu at Top of Page-->
 		<div id="navbar">
 		<!--https://stackoverflow.com/questions/20416144/add-a-picture-logo-in-a-html-list-navigation-menu-->
-			<a href="{% url 'home' %}" class="logo"><img src="{% static '/images/Logo.png' %}" width=50 height=50>&nbsp &nbsp Common Table Church RVA</a>
+			<a href="{% url 'home' %}" class="logo"><img src="{% static '/images/Logo.png' %}" width=50 height=50>&nbsp
+				&nbsp Common Table Church RVA</a>
 			<div id="navbar-right">
 				<div class="dropdown">
 					<button class="dropbtn">About
@@ -56,25 +57,30 @@
 				</div>
 			</div>
 		</div>
-	</div>
 <!-- https://www.w3schools.com/howto/howto_css_responsive_header.asp-->
 
-	<div>
-		{% block content %} {% endblock %}
+		<div id="page-content">
+			{% block content %} {% endblock %}
+		</div>
+
+		<footer>
+			<div id="footer">
+			<a href="{% url 'home' %}">Common Table Church</a>
+			&nbsp &nbsp || &nbsp &nbsp
+			<a href=“tel:804-250-5109”><img src="{% static '/images/tp.png' %}" width=12.5 height=12.5></a>
+			&nbsp &nbsp
+			<a href = "mailto: info@commontablerichmond.com"><img src="{% static '/images/em.png' %}" width=12.5 height=12.5></a>
+			&nbsp &nbsp || &nbsp &nbsp
+			<a href="https://www.facebook.com/CommonTableRVA"><img src="{% static '/images/fb.png' %}" width=12.5 height=12.5></a>
+			&nbsp &nbsp
+			<a href="https://www.instagram.com/commontablerva/"><img src="{% static '/images/ig.png' %}" width=12.5 height=12.5></a>
+			&nbsp &nbsp || &nbsp &nbsp @2024 AJLancaster
+			</div>
+		</footer>
 	</div>
 
-	<div id="footer">
-		<a href="{% url 'home' %}">Common Table Church</a>
-		&nbsp &nbsp || &nbsp &nbsp
-		<a href=“tel:804-250-5109”><img src="{% static '/images/tp.png' %}" width=12.5 height=12.5></a>
-		&nbsp &nbsp
-		<a href = "mailto: info@commontablerichmond.com"><img src="{% static '/images/em.png' %}" width=12.5 height=12.5></a>
-		&nbsp &nbsp || &nbsp &nbsp
-		<a href="https://www.facebook.com/CommonTableRVA"><img src="{% static '/images/fb.png' %}" width=12.5 height=12.5></a>
-		&nbsp &nbsp
-		<a href="https://www.instagram.com/commontablerva/"><img src="{% static '/images/ig.png' %}" width=12.5 height=12.5></a>
-		&nbsp &nbsp || &nbsp &nbsp @2024 AJLancaster
-    </div>
 </body>
+
+
 
 </html>
