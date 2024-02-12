@@ -64,8 +64,8 @@ def news(request):
     return HttpResponse(template.render())
 
 
-def social(request):
-    template = loader.get_template('social.html')
+def contact(request):
+    template = loader.get_template('contact.html')
     return HttpResponse(template.render())
 
 

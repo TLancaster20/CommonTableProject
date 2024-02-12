@@ -1,0 +1,20 @@
+#contact_page{
+    display:flex;
+    flex-direction:row;
+    justify-content: space-around;
+    align-items: center;
+}
+
+#info h2{
+    font-size: 35px;
+}
+
+#info p{
+    font-size: 20px;
+}
+
+#map_page{
+    width:50vw;
+    height:65vh;
+    padding:25px;
+}

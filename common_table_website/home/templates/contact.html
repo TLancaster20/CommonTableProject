@@ -1,0 +1,22 @@
+{% extends "base.html" %}
+{% block content %}
+
+{% load static %}
+<link rel="stylesheet" href="{% static 'css/contact.css' %}">
+
+<div id="contact_page">
+	<div id="info">
+		<h2>Contact Info</h2>
+			<ul>
+				<p>Phone: <a href=“tel:804-250-5109”>804-250-5109</a></p>
+				<p>Email: <a href = "mailto: info@commontablerichmond.com">info@commontablerichmond.com</a></p>
+			</ul>
+		<h2 style="margin-top: 25px;">Address</h2>
+			<p>910 S Harrison Street</p>
+			<p>Richmond, VA 23220</p>
+	</div>
+	<div id="map">
+		<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3163.7187885852372!2d-77.46414912584815!3d37.5381257257596!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89b113e57bc4a657%3A0x74370938e937c7e6!2sCommon%20Table!5e0!3m2!1sen!2sus!4v1707742263525!5m2!1sen!2sus" id="map_page" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+	</div>
+</div>
+{% endblock %}
