@@ -97,7 +97,6 @@
 #page-content{
     position: relative;
     padding-top:70px;
-    z-index:-2;
     background-color:#dcdcdc;
     min-height:77vh;
 }
