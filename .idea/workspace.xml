@@ -2,17 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="2eb00f13-d4bc-4e89-91ba-b5175a20cf94" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/common_table_website/home/templates/partnership.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/common_table_website/home/serializers.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/common_table_website/home/admin.py" beforeDir="false" afterPath="$PROJECT_DIR$/common_table_website/home/admin.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/common_table_website/common_table_website/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/common_table_website/common_table_website/settings.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/common_table_website/home/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/common_table_website/home/models.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/common_table_website/home/static/css/index.css" beforeDir="false" afterPath="$PROJECT_DIR$/common_table_website/home/static/css/index.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/common_table_website/home/static/css/styles.css" beforeDir="false" afterPath="$PROJECT_DIR$/common_table_website/home/static/css/styles.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/common_table_website/home/templates/base.html" beforeDir="false" afterPath="$PROJECT_DIR$/common_table_website/home/templates/base.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/common_table_website/home/templates/mission_vision_values.html" beforeDir="false" afterPath="$PROJECT_DIR$/common_table_website/home/templates/mission_vision_values.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/common_table_website/home/templates/what_to_expect.html" beforeDir="false" afterPath="$PROJECT_DIR$/common_table_website/home/templates/what_to_expect.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/common_table_website/home/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/common_table_website/home/urls.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/common_table_website/home/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/common_table_website/home/views.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/common_table_website/requirements.txt" beforeDir="false" afterPath="$PROJECT_DIR$/common_table_website/requirements.txt" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -39,7 +33,7 @@
         <counts>
           <entry key="css" value="2801" />
           <entry key="html" value="3028" />
-          <entry key="py" value="4105" />
+          <entry key="py" value="4375" />
           <entry key="sh" value="21" />
         </counts>
       </usages-collector>
@@ -48,7 +42,7 @@
           <entry key="CSS" value="2801" />
           <entry key="HTML" value="3028" />
           <entry key="PLAIN_TEXT" value="21" />
-          <entry key="Python" value="4105" />
+          <entry key="Python" value="4375" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
@@ -56,7 +50,7 @@
           <entry key="css" value="17" />
           <entry key="gitignore" value="1" />
           <entry key="html" value="61" />
-          <entry key="py" value="22" />
+          <entry key="py" value="30" />
           <entry key="sh" value="2" />
           <entry key="yaml" value="1" />
         </counts>
@@ -66,7 +60,7 @@
           <entry key="CSS" value="17" />
           <entry key="HTML" value="61" />
           <entry key="PLAIN_TEXT" value="3" />
-          <entry key="Python" value="22" />
+          <entry key="Python" value="30" />
           <entry key="YAML" value="1" />
         </counts>
       </usages-collector>
@@ -77,26 +71,44 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/common_table_website/home/templates/base.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="251">
+            <state relative-caret-position="867">
               <caret line="51" column="69" selection-start-line="51" selection-start-column="69" selection-end-line="51" selection-end-column="69" />
             </state>
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/common_table_website/home/templates/volunteer.html">
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/common_table_website/home/models.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state>
-              <caret selection-end-line="3" selection-end-column="14" />
+            <state relative-caret-position="358">
+              <caret line="52" column="52" selection-start-line="52" selection-start-column="52" selection-end-line="52" selection-end-column="52" />
             </state>
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/common_table_website/home/templates/partnership.html">
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/common_table_website/home/serializers.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="102">
-              <caret line="6" column="8" selection-start-line="6" selection-start-column="8" selection-end-line="6" selection-end-column="8" />
+            <state relative-caret-position="51">
+              <caret line="3" lean-forward="true" selection-start-line="3" selection-end-line="4" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/common_table_website/common_table_website/settings.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="272">
+              <caret line="40" column="21" selection-start-line="40" selection-start-column="21" selection-end-line="40" selection-end-column="21" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/common_table_website/home/admin.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="17">
+              <caret line="1" selection-start-line="1" selection-end-line="1" selection-end-column="61" />
             </state>
           </provider>
         </entry>
@@ -120,7 +132,6 @@
         <option value="$PROJECT_DIR$/common_table_website/home/static/index.css.css" />
         <option value="$PROJECT_DIR$/common_table_website/home/templates/community.html" />
         <option value="$PROJECT_DIR$/common_table_website/home/templates/find.html" />
-        <option value="$PROJECT_DIR$/common_table_website/common_table_website/settings.py" />
         <option value="$PROJECT_DIR$/common_table_website/apprunner.yaml" />
         <option value="$PROJECT_DIR$/common_table_website/.gitignore" />
         <option value="$PROJECT_DIR$/common_table_website/startup.sh" />
@@ -133,7 +144,6 @@
         <option value="$PROJECT_DIR$/common_table_website/home/static/css/contact.css" />
         <option value="$PROJECT_DIR$/common_table_website/home/templates/contact.html" />
         <option value="$PROJECT_DIR$/common_table_website/home/templates/mission_vision_values.html" />
-        <option value="$PROJECT_DIR$/common_table_website/home/models.py" />
         <option value="$PROJECT_DIR$/common_table_website/home/admin.py" />
         <option value="$PROJECT_DIR$/common_table_website/home/static/css/index.css" />
         <option value="$PROJECT_DIR$/common_table_website/home/static/css/styles.css" />
@@ -142,12 +152,15 @@
         <option value="$PROJECT_DIR$/common_table_website/home/urls.py" />
         <option value="$PROJECT_DIR$/common_table_website/home/views.py" />
         <option value="$PROJECT_DIR$/common_table_website/home/templates/partnership.html" />
+        <option value="$PROJECT_DIR$/common_table_website/home/serializers.py" />
+        <option value="$PROJECT_DIR$/common_table_website/common_table_website/settings.py" />
+        <option value="$PROJECT_DIR$/common_table_website/home/models.py" />
       </list>
     </option>
   </component>
-  <component name="ProjectFrameBounds" extendedState="1">
-    <option name="x" value="-8" />
-    <option name="width" value="1937" />
+  <component name="ProjectFrameBounds">
+    <option name="x" value="951" />
+    <option name="width" value="978" />
     <option name="height" value="1017" />
   </component>
   <component name="ProjectView">
@@ -171,29 +184,13 @@
               <item name="CommonTableProject" type="b2602c69:ProjectViewProjectNode" />
               <item name="CommonTableProject" type="462c0819:PsiDirectoryNode" />
               <item name="common_table_website" type="462c0819:PsiDirectoryNode" />
-              <item name="home" type="462c0819:PsiDirectoryNode" />
+              <item name="common_table_website" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="CommonTableProject" type="b2602c69:ProjectViewProjectNode" />
               <item name="CommonTableProject" type="462c0819:PsiDirectoryNode" />
               <item name="common_table_website" type="462c0819:PsiDirectoryNode" />
               <item name="home" type="462c0819:PsiDirectoryNode" />
-              <item name="static" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="CommonTableProject" type="b2602c69:ProjectViewProjectNode" />
-              <item name="CommonTableProject" type="462c0819:PsiDirectoryNode" />
-              <item name="common_table_website" type="462c0819:PsiDirectoryNode" />
-              <item name="home" type="462c0819:PsiDirectoryNode" />
-              <item name="static" type="462c0819:PsiDirectoryNode" />
-              <item name="css" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="CommonTableProject" type="b2602c69:ProjectViewProjectNode" />
-              <item name="CommonTableProject" type="462c0819:PsiDirectoryNode" />
-              <item name="common_table_website" type="462c0819:PsiDirectoryNode" />
-              <item name="home" type="462c0819:PsiDirectoryNode" />
-              <item name="templates" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -231,11 +228,11 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-5" y="0" width="1291" height="678" extended-state="1" />
+    <frame x="634" y="0" width="652" height="678" extended-state="0" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.86055046" visible="true" weight="0.2551834" />
-      <window_info id="Structure" order="1" sideWeight="0.13944954" side_tool="true" visible="true" weight="0.2551834" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.86055046" visible="true" weight="0.17886178" />
+      <window_info id="Structure" order="1" sideWeight="0.13944954" side_tool="true" visible="true" weight="0.17886178" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" visible="true" weight="0.32851985" />
@@ -279,13 +276,6 @@
     <entry file="file://$PROJECT_DIR$/common_table_website/home/static/index.css.css" />
     <entry file="file://$PROJECT_DIR$/common_table_website/home/templates/community.html" />
     <entry file="file://$PROJECT_DIR$/common_table_website/home/templates/find.html" />
-    <entry file="file://$PROJECT_DIR$/common_table_website/common_table_website/settings.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="306">
-          <caret line="51" column="48" selection-start-line="51" selection-start-column="48" selection-end-line="51" selection-end-column="48" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/common_table_website/apprunner.yaml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="170">
@@ -359,23 +349,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/common_table_website/home/admin.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="136">
-          <caret line="8" selection-start-line="8" selection-end-line="8" />
-          <folding>
-            <element signature="e#0#32#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/common_table_website/home/models.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="171">
-          <caret line="19" column="5" selection-start-line="19" selection-start-column="5" selection-end-line="19" selection-end-column="5" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/common_table_website/home/static/css/styles.css">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-561">
@@ -418,20 +391,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/common_table_website/home/templates/base.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="251">
-          <caret line="51" column="69" selection-start-line="51" selection-start-column="69" selection-end-line="51" selection-end-column="69" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/common_table_website/home/templates/volunteer.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret selection-end-line="3" selection-end-column="14" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/common_table_website/home/urls.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="323">
@@ -439,9 +398,16 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/common_table_website/home/templates/partnership.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="119">
+          <caret line="7" column="14" lean-forward="true" selection-start-line="7" selection-start-column="14" selection-end-line="7" selection-end-column="14" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/common_table_website/home/views.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="436">
+        <state relative-caret-position="1615">
           <caret line="98" lean-forward="true" selection-start-line="98" selection-end-line="98" />
           <folding>
             <marker date="1708294349217" expanded="true" signature="2432:2531" ph="..." />
@@ -449,10 +415,48 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/common_table_website/home/templates/partnership.html">
+    <entry file="file://$PROJECT_DIR$/common_table_website/home/apps.py">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/common_table_website/home/templates/base.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="102">
-          <caret line="6" column="8" selection-start-line="6" selection-start-column="8" selection-end-line="6" selection-end-column="8" />
+        <state relative-caret-position="867">
+          <caret line="51" column="69" selection-start-line="51" selection-start-column="69" selection-end-line="51" selection-end-column="69" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/common_table_website/home/templates/volunteer.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="51">
+          <caret line="3" column="14" selection-start-line="3" selection-start-column="14" selection-end-line="3" selection-end-column="14" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/common_table_website/home/serializers.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="51">
+          <caret line="3" lean-forward="true" selection-start-line="3" selection-end-line="4" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/common_table_website/home/admin.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="17">
+          <caret line="1" selection-start-line="1" selection-end-line="1" selection-end-column="61" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/common_table_website/common_table_website/settings.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="272">
+          <caret line="40" column="21" selection-start-line="40" selection-start-column="21" selection-end-line="40" selection-end-column="21" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/common_table_website/home/models.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="358">
+          <caret line="52" column="52" selection-start-line="52" selection-start-column="52" selection-end-line="52" selection-end-column="52" />
         </state>
       </provider>
     </entry>
