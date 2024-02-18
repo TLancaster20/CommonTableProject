@@ -92,3 +92,7 @@ def prayer(request):
 def give(request):
     template = loader.get_template('give.html')
     return HttpResponse(template.render())
+
+def partnership(request):
+    template = loader.get_template('partnership.html')
+    return HttpResponse(template.render())
