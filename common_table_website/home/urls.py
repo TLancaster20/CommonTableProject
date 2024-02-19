@@ -1,7 +1,17 @@
 from django.urls import path
 from . import views
 
+
 urlpatterns = [
+    path('get_staff', views.getStaffProfile),
+    path('get_pastors', views.getPastorProfile),
+    path('get_first_timers', views.getFirstTimerProfile),
+
+    path('post_staff', views.postStaffProfile),
+    path('post_pastors', views.postPastorProfile),
+    path('post_first_timers', views.postFirstTimerProfile),
+
+    # path('post/', views.postProfile),
     path('', views.home, name='home'),
     path('about', views.about, name='about'),
     path('pastoral_team', views.pastoral, name="pastoral_team"),

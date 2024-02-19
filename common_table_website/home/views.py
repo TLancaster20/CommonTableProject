@@ -1,9 +1,59 @@
 from django.shortcuts import render
 from django.http import HttpResponse
 from django.template import loader
-from .models import StaffProfile, PastoralProfile
+
+from rest_framework.response import Response
+from rest_framework.decorators import api_view
+
+from .models import StaffProfile, PastoralProfile, FirstTimer
+from .serializers import StaffSerializer, PastorSerializer, FirstTimerSerializer
 
 # Home App is designed to run and manage static pages creating the base website
+
+
+@api_view(['GET'])
+def getStaffProfile(request):
+    staffprofile = StaffProfile.objects.all()
+    serializer = StaffSerializer(staffprofile, many=True)
+    return Response(serializer.data)
+
+
+@api_view(['POST'])
+def postStaffProfile(request):
+    serializer = StaffSerializer(data=request.data)
+    if serializer.is_valid():
+        serializer.save()
+        return Response(serializer.data)
+
+
+@api_view(['GET'])
+def getPastorProfile(request):
+    pastorprofile = PastoralProfile.objects.all()
+    serializer = PastorSerializer(pastorprofile, many=True)
+    return Response(serializer.data)
+
+
+@api_view(['POST'])
+def postPastorProfile(request):
+    serializer = PastorSerializer(data=request.data)
+    if serializer.is_valid():
+        serializer.save()
+        return Response(serializer.data)
+
+
+@api_view(['GET'])
+def getFirstTimerProfile(request):
+    firsttimerprofile = FirstTimer.objects.all()
+    serializer = FirstTimerSerializer(firsttimerprofile, many=True)
+    return Response(serializer.data)
+
+
+@api_view(['POST'])
+def postFirstTimerProfile(request):
+    serializer = FirstTimerSerializer(data=request.data)
+    if serializer.is_valid():
+        serializer.save()
+        return Response(serializer.data)
 
 
 def home(request):
@@ -16,6 +66,12 @@ def about(request):
     return HttpResponse(template.render())
 
 
+"""class PastorViewSet(viewsets.ModelViewSet):
+    queryset = PastoralProfile.objects.all()
+    serializer_class = PastorSerializer"""
+
+
+
 def pastoral(request):
     pastoral_staff = PastoralProfile.objects.all().values()
     template = loader.get_template('pastoral_team.html')
@@ -23,6 +79,11 @@ def pastoral(request):
         'pastoral_staff': pastoral_staff,
     }
     return HttpResponse(template.render(context, request))
+
+
+"""class StaffViewSet(viewsets.ModelViewSet):
+    queryset = StaffProfile.objects.all()
+    serializer_class = StaffSerializer"""
 
 
 def staff(request):
@@ -92,6 +153,7 @@ def prayer(request):
 def give(request):
     template = loader.get_template('give.html')
     return HttpResponse(template.render())
+
 
 def partnership(request):
     template = loader.get_template('partnership.html')

@@ -10,6 +10,13 @@ class StaffProfile(models.Model):
   email = models.EmailField(max_length=100, default="")
   bio = models.CharField(max_length=2000, default="")
 
+  class Meta:
+    verbose_name = "Staff Profile"
+    verbose_name_plural = "Staff Profiles"
+
+  def __unicode__(self):
+    return '%s %s' % (self.firstname, self.lastname)
+
 class PastoralProfile(models.Model):
   firstname = models.CharField(max_length=255, default="")
   lastname = models.CharField(max_length=255, default="")
@@ -18,6 +25,13 @@ class PastoralProfile(models.Model):
   role = models.CharField(max_length=30, default="")
   email = models.EmailField(max_length=100, default="")
   bio = models.CharField(max_length=2000, default="")
+
+  class Meta:
+    verbose_name = "Pastor Profile"
+    verbose_name_plural = "Pastor Profiles"
+
+  def __unicode__(self):
+    return '%s %s' % (self.firstname, self.lastname)
 
 class FirstTimer(models.Model):
   firstname = models.CharField(max_length=255, default="")
@@ -30,4 +44,11 @@ class FirstTimer(models.Model):
   state = models.CharField(max_length=50, default="")
   zipcode = models.CharField(max_length=15, default="")
   maritalstatus = models.CharField(max_length=15, default="")
+
+  class Meta:
+    verbose_name = "First Timer"
+    verbose_name_plural = "First Timers"
+
+  def __unicode__(self):
+    return '%s %s' % (self.firstname, self.lastname)
 
