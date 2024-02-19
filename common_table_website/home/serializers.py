@@ -3,13 +3,20 @@ from rest_framework import serializers
 from .models import StaffProfile, PastoralProfile, FirstTimer
 
 
-class UserSerializer(serializers.HyperlinkedModelSerializer):
+class StaffSerializer(serializers.ModelSerializer):
     class Meta:
-        model = User
-        fields = ['url', 'username', 'email', 'groups']
+        model = StaffProfile
+        fields =('firstname', 'lastname', 'pronouns', 'profilepic', 'role', 'email', 'bio')
 
 
-class GroupSerializer(serializers.HyperlinkedModelSerializer):
+class PastorSerializer(serializers.ModelSerializer):
     class Meta:
-        model = Group
-        fields = ['url', 'name']
+        model = PastoralProfile
+        fields = ('firstname', 'lastname', 'pronouns', 'profilepic', 'role', 'email', 'bio')
+
+
+class FirstTimerSerializer(serializers.ModelSerializer):
+    class Meta:
+        model = FirstTimer
+        fields = ('firstname', 'lastname', 'pronouns', 'email', 'phonenumber', 'streetaddress', 'locality', 'state',
+                  'zipcode', 'maritalstatus')
