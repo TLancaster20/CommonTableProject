@@ -1,9 +1,11 @@
 from django.shortcuts import render
-from django.http import HttpResponse
+from django.http import HttpResponse, JsonResponse
 from django.template import loader
+from django.views.decorators.csrf import csrf_exempt
 
 from rest_framework.response import Response
 from rest_framework.decorators import api_view
+from rest_framework.parsers import JSONParser
 
 from .models import StaffProfile, PastoralProfile, FirstTimer
 from .serializers import StaffSerializer, PastorSerializer, FirstTimerSerializer
@@ -66,33 +68,99 @@ def about(request):
     return HttpResponse(template.render())
 
 
-"""class PastorViewSet(viewsets.ModelViewSet):
-    queryset = PastoralProfile.objects.all()
-    serializer_class = PastorSerializer"""
-
-
-
+@csrf_exempt
 def pastoral(request):
-    pastoral_staff = PastoralProfile.objects.all().values()
-    template = loader.get_template('pastoral_team.html')
+    if request.method == 'GET':
+        pastoral_staff = PastoralProfile.objects.all()
+        serializer = PastorSerializer(pastoral_staff, many=True)
+        return JsonResponse(serializer.data, safe=False)
+    elif request.method == 'POST':
+        data = JSONParser().parse(request)
+        serializer = PastorSerializer(data=data)
+        if serializer.is_valid():
+            serializer.save()
+            return JsonResponse(serializer.data, status=201)
+        return JsonResponse(serializer.errors, status=400)
+    """template = loader.get_template('pastoral_team.html')
     context = {
         'pastoral_staff': pastoral_staff,
     }
-    return HttpResponse(template.render(context, request))
+    return HttpResponse(template.render(context, request))"""
 
 
-"""class StaffViewSet(viewsets.ModelViewSet):
-    queryset = StaffProfile.objects.all()
-    serializer_class = StaffSerializer"""
+@csrf_exempt
+def pastor_detail(request, pk):
+    """
+    Retrieve, update or delete a code snippet.
+    """
+    try:
+        pastoral_staff = PastoralProfile.objects.get(pk=pk)
+    except PastoralProfile.DoesNotExist:
+        return HttpResponse(status=404)
+
+    if request.method == 'GET':
+        serializer = PastorSerializer(pastoral_staff)
+        return JsonResponse(serializer.data)
+
+    elif request.method == 'PUT':
+        data = JSONParser().parse(request)
+        serializer = PastorSerializer(pastoral_staff, data=data)
+        if serializer.is_valid():
+            serializer.save()
+            return JsonResponse(serializer.data)
+        return JsonResponse(serializer.errors, status=400)
+
+    elif request.method == 'DELETE':
+        pastoral_staff.delete()
+        return HttpResponse(status=204)
 
 
 def staff(request):
-    staff_team = StaffProfile.objects.all().values()
+    if request.method == 'GET':
+        staff = StaffProfile.objects.all()
+        serializer = StaffSerializer(staff, many=True)
+        return JsonResponse(serializer.data, safe=False)
+    elif request.method == 'POST':
+        data = JSONParser().parse(request)
+        serializer = StaffSerializer(data=data)
+        if serializer.is_valid():
+            serializer.save()
+            return JsonResponse(serializer.data, status=201)
+        return JsonResponse(serializer.errors, status=400)
+
+    """staff_team = StaffProfile.objects.all().values()
     template = loader.get_template('staff_and_council.html')
     context = {
         'staff_team': staff_team,
     }
-    return HttpResponse(template.render(context, request))
+    return HttpResponse(template.render(context, request))"""
+
+
+@csrf_exempt
+def staff_detail(request, pk):
+    """
+    Retrieve, update or delete a code snippet.
+    """
+    try:
+        staff = StaffProfile.objects.get(pk=pk)
+    except StaffProfile.DoesNotExist:
+        return HttpResponse(status=404)
+
+    if request.method == 'GET':
+        serializer = StaffSerializer(staff)
+        return JsonResponse(serializer.data)
+
+    elif request.method == 'PUT':
+        data = JSONParser().parse(request)
+        serializer = PastorSerializer(staff, data=data)
+        if serializer.is_valid():
+            serializer.save()
+            return JsonResponse(serializer.data)
+        return JsonResponse(serializer.errors, status=400)
+
+    elif request.method == 'DELETE':
+        staff.delete()
+        return HttpResponse(status=204)
 
 
 def beliefs(request):

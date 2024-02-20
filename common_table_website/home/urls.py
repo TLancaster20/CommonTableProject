@@ -11,11 +11,15 @@ urlpatterns = [
     path('post_pastors', views.postPastorProfile),
     path('post_first_timers', views.postFirstTimerProfile),
 
-    # path('post/', views.postProfile),
     path('', views.home, name='home'),
     path('about', views.about, name='about'),
+
     path('pastoral_team', views.pastoral, name="pastoral_team"),
+    path('pastoral_team/<int:pk>/', views.pastor_detail),
+
     path('staff_and_council', views.staff, name="staff_and_council"),
+    path('staff_and_council/<int:pk>/', views.staff_detail),
+
     path('beliefs', views.beliefs, name="beliefs"),
     path('mission_vision_values', views.mission, name="mission_vision_values"),
     path('meetings', views.meetings, name="meetings"),
