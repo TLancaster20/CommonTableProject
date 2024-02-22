@@ -3,6 +3,9 @@ from django.http import HttpResponse
 from django.template import loader
 
 from rest_framework import generics
+from rest_framework.decorators import permission_classes
+from rest_framework.permissions import AllowAny
+
 from .models import StaffProfile, PastoralProfile, FirstTimer
 from .serializers import StaffSerializer, PastorSerializer, FirstTimerSerializer
 
@@ -23,6 +26,7 @@ class PastoralList(generics.ListCreateAPIView):
     queryset = PastoralProfile.objects.all()
     serializer_class = PastorSerializer
 
+@permission_classes([AllowAny])
 def pastoral_team(request):
     template = loader.get_template('pastoral_team.html')
     return HttpResponse(template.render())
@@ -37,6 +41,7 @@ class StaffList(generics.ListCreateAPIView):
     queryset = StaffProfile.objects.all()
     serializer_class = StaffSerializer
 
+@permission_classes([AllowAny])
 def staff(request):
     template = loader.get_template('staff_and_council.html')
 
