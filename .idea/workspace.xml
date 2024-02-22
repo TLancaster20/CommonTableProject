@@ -2,10 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="2eb00f13-d4bc-4e89-91ba-b5175a20cf94" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/common_table_website/home/static/css/styles.css" beforeDir="false" afterPath="$PROJECT_DIR$/common_table_website/home/static/css/styles.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/common_table_website/home/static/images/Logo.png" beforeDir="false" afterPath="$PROJECT_DIR$/common_table_website/home/static/images/Logo.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/common_table_website/home/templates/base.html" beforeDir="false" afterPath="$PROJECT_DIR$/common_table_website/home/templates/base.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/common_table_website/home/templates/pastoral_team.html" beforeDir="false" afterPath="$PROJECT_DIR$/common_table_website/home/templates/pastoral_team.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/common_table_website/home/templates/staff_and_council.html" beforeDir="false" afterPath="$PROJECT_DIR$/common_table_website/home/templates/staff_and_council.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/common_table_website/home/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/common_table_website/home/urls.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/common_table_website/home/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/common_table_website/home/views.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -17,7 +17,7 @@
     <session id="-1779683101">
       <usages-collector id="statistics.lifecycle.project">
         <counts>
-          <entry key="project.closed" value="23" />
+          <entry key="project.closed" value="24" />
           <entry key="project.open.time.0" value="1" />
           <entry key="project.open.time.13" value="1" />
           <entry key="project.open.time.14" value="1" />
@@ -31,25 +31,25 @@
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
-          <entry key="css" value="3224" />
-          <entry key="html" value="3294" />
-          <entry key="py" value="9971" />
+          <entry key="css" value="3259" />
+          <entry key="html" value="3299" />
+          <entry key="py" value="10214" />
           <entry key="sh" value="21" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="CSS" value="3224" />
-          <entry key="HTML" value="3294" />
+          <entry key="CSS" value="3259" />
+          <entry key="HTML" value="3299" />
           <entry key="PLAIN_TEXT" value="21" />
-          <entry key="Python" value="9971" />
+          <entry key="Python" value="10214" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
         <counts>
           <entry key="css" value="24" />
           <entry key="gitignore" value="1" />
-          <entry key="html" value="62" />
+          <entry key="html" value="67" />
           <entry key="py" value="49" />
           <entry key="sh" value="2" />
           <entry key="yaml" value="1" />
@@ -58,7 +58,7 @@
       <usages-collector id="statistics.file.types.open">
         <counts>
           <entry key="CSS" value="24" />
-          <entry key="HTML" value="62" />
+          <entry key="HTML" value="67" />
           <entry key="PLAIN_TEXT" value="3" />
           <entry key="Python" value="49" />
           <entry key="YAML" value="1" />
@@ -80,34 +80,16 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/common_table_website/home/static/css/styles.css">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="238">
-              <caret line="23" column="11" lean-forward="true" selection-start-line="23" selection-start-column="11" selection-end-line="23" selection-end-column="11" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/common_table_website/home/templates/base.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="138">
-              <caret line="14" column="49" selection-start-line="14" selection-start-column="49" selection-end-line="14" selection-end-column="49" />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/common_table_website/home/views.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="408">
-              <caret line="24" lean-forward="true" selection-start-line="24" selection-end-line="24" />
+            <state relative-caret-position="68">
+              <caret line="25" column="17" selection-start-line="25" selection-start-column="17" selection-end-line="25" selection-end-column="17" />
               <folding>
                 <element signature="e#0#35#0" expanded="true" />
-                <marker date="1708469484515" expanded="true" signature="370:371" ph="..." />
-                <marker date="1708469484515" expanded="true" signature="645:730" ph="..." />
-                <marker date="1708469484515" expanded="true" signature="1192:1193" ph="..." />
+                <marker date="1708634081133" expanded="true" signature="370:371" ph="..." />
+                <marker date="1708634081133" expanded="true" signature="645:730" ph="..." />
+                <marker date="1708634081133" expanded="true" signature="1133:1134" ph="..." />
               </folding>
             </state>
           </provider>
@@ -116,11 +98,38 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/common_table_website/home/urls.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="68">
-              <caret line="6" column="22" selection-start-line="6" selection-start-column="22" selection-end-line="6" selection-end-column="22" />
+            <state relative-caret-position="238">
+              <caret line="14" column="19" lean-forward="true" selection-start-line="14" selection-start-column="19" selection-end-line="14" selection-end-column="19" />
               <folding>
                 <element signature="e#0#28#0" expanded="true" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/common_table_website/home/templates/base.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="102">
+              <caret line="63" column="46" lean-forward="true" selection-start-line="63" selection-start-column="12" selection-end-line="63" selection-end-column="46" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/common_table_website/home/templates/beliefs.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="17">
+              <caret line="1" column="16" selection-start-line="1" selection-start-column="16" selection-end-line="1" selection-end-column="16" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/common_table_website/home/templates/about.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-225">
+              <caret column="8" selection-start-column="8" selection-end-column="8" />
             </state>
           </provider>
         </entry>
@@ -161,9 +170,7 @@
         <option value="$PROJECT_DIR$/common_table_website/apprunner.yaml" />
         <option value="$PROJECT_DIR$/common_table_website/.gitignore" />
         <option value="$PROJECT_DIR$/common_table_website/startup.sh" />
-        <option value="$PROJECT_DIR$/common_table_website/home/templates/pastoral_team.html" />
         <option value="$PROJECT_DIR$/common_table_website/home/templates/404.html" />
-        <option value="$PROJECT_DIR$/common_table_website/home/templates/staff_and_council.html" />
         <option value="$PROJECT_DIR$/common_table_website/home/templates/about.html" />
         <option value="$PROJECT_DIR$/common_table_website/home/templates/index.html" />
         <option value="$PROJECT_DIR$/common_table_website/home/templates/beliefs.html" />
@@ -178,14 +185,16 @@
         <option value="$PROJECT_DIR$/common_table_website/home/serializers.py" />
         <option value="$PROJECT_DIR$/common_table_website/common_table_website/urls.py" />
         <option value="$PROJECT_DIR$/common_table_website/home/static/css/index.css" />
-        <option value="$PROJECT_DIR$/common_table_website/home/urls.py" />
-        <option value="$PROJECT_DIR$/common_table_website/home/views.py" />
-        <option value="$PROJECT_DIR$/common_table_website/home/static/css/styles.css" />
         <option value="$PROJECT_DIR$/common_table_website/home/templates/base.html" />
+        <option value="$PROJECT_DIR$/common_table_website/home/static/css/styles.css" />
+        <option value="$PROJECT_DIR$/common_table_website/home/views.py" />
+        <option value="$PROJECT_DIR$/common_table_website/home/urls.py" />
+        <option value="$PROJECT_DIR$/common_table_website/home/templates/pastoral_team.html" />
+        <option value="$PROJECT_DIR$/common_table_website/home/templates/staff_and_council.html" />
       </list>
     </option>
   </component>
-  <component name="ProjectFrameBounds" extendedState="7">
+  <component name="ProjectFrameBounds" extendedState="6">
     <option name="x" value="1053" />
     <option name="y" value="135" />
     <option name="width" value="786" />
@@ -281,8 +290,8 @@
     <frame x="-7" y="-7" width="1295" height="687" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.8465704" visible="true" weight="0.12241653" />
-      <window_info id="Structure" order="1" sideWeight="0.1534296" side_tool="true" visible="true" weight="0.12241653" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.8465704" visible="true" weight="0.17329094" />
+      <window_info id="Structure" order="1" sideWeight="0.1534296" side_tool="true" visible="true" weight="0.17329094" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" visible="true" weight="0.32851985" />
@@ -350,31 +359,10 @@
     <entry file="file://$PROJECT_DIR$/common_table_website/home/migrations/0001_initial.py">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/common_table_website/home/templates/pastoral_team.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret selection-end-line="1" selection-end-column="19" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/common_table_website/home/templates/staff_and_council.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="17">
-          <caret line="1" column="19" selection-start-line="1" selection-start-column="19" selection-end-line="1" selection-end-column="19" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/common_table_website/home/templates/index.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="289">
           <caret line="17" column="10" selection-start-line="17" selection-start-column="10" selection-end-line="17" selection-end-column="10" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/common_table_website/home/templates/beliefs.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="34">
-          <caret line="2" column="25" selection-start-line="2" selection-start-column="25" selection-end-line="2" selection-end-column="25" />
         </state>
       </provider>
     </entry>
@@ -396,13 +384,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="51">
           <caret line="3" column="14" selection-start-line="3" selection-start-column="14" selection-end-line="3" selection-end-column="14" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/common_table_website/home/templates/about.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret column="8" selection-start-column="8" selection-end-column="8" />
         </state>
       </provider>
     </entry>
@@ -464,13 +445,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/common_table_website/home/models.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="472">
-          <caret line="52" column="52" selection-start-line="52" selection-start-column="52" selection-end-line="52" selection-end-column="52" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/common_table_website/common_table_website/urls.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="308">
@@ -478,33 +452,17 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/common_table_website/home/urls.py">
+    <entry file="file://$PROJECT_DIR$/common_table_website/home/static/css/styles.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="68">
-          <caret line="6" column="22" selection-start-line="6" selection-start-column="22" selection-end-line="6" selection-end-column="22" />
-          <folding>
-            <element signature="e#0#28#0" expanded="true" />
-          </folding>
+        <state relative-caret-position="391">
+          <caret line="35" column="16" selection-start-line="35" selection-start-column="16" selection-end-line="35" selection-end-column="16" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/common_table_website/home/views.py">
+    <entry file="file://$PROJECT_DIR$/common_table_website/home/models.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="408">
-          <caret line="24" lean-forward="true" selection-start-line="24" selection-end-line="24" />
-          <folding>
-            <element signature="e#0#35#0" expanded="true" />
-            <marker date="1708469484515" expanded="true" signature="370:371" ph="..." />
-            <marker date="1708469484515" expanded="true" signature="645:730" ph="..." />
-            <marker date="1708469484515" expanded="true" signature="1192:1193" ph="..." />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/common_table_website/home/templates/base.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="138">
-          <caret line="14" column="49" selection-start-line="14" selection-start-column="49" selection-end-line="14" selection-end-column="49" />
+        <state relative-caret-position="472">
+          <caret line="52" column="52" selection-start-line="52" selection-start-column="52" selection-end-line="52" selection-end-column="52" />
         </state>
       </provider>
     </entry>
@@ -518,10 +476,61 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/common_table_website/home/static/css/styles.css">
+    <entry file="file://$PROJECT_DIR$/common_table_website/home/templates/staff_and_council.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="34">
+          <caret line="2" column="55" selection-start-line="2" selection-start-column="55" selection-end-line="2" selection-end-column="55" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/common_table_website/home/templates/pastoral_team.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="51">
+          <caret line="3" selection-start-line="3" selection-end-line="3" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/common_table_website/home/views.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="68">
+          <caret line="25" column="17" selection-start-line="25" selection-start-column="17" selection-end-line="25" selection-end-column="17" />
+          <folding>
+            <element signature="e#0#35#0" expanded="true" />
+            <marker date="1708634081133" expanded="true" signature="370:371" ph="..." />
+            <marker date="1708634081133" expanded="true" signature="645:730" ph="..." />
+            <marker date="1708634081133" expanded="true" signature="1133:1134" ph="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/common_table_website/home/urls.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="238">
-          <caret line="23" column="11" lean-forward="true" selection-start-line="23" selection-start-column="11" selection-end-line="23" selection-end-column="11" />
+          <caret line="14" column="19" lean-forward="true" selection-start-line="14" selection-start-column="19" selection-end-line="14" selection-end-column="19" />
+          <folding>
+            <element signature="e#0#28#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/common_table_website/home/templates/base.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="102">
+          <caret line="63" column="46" lean-forward="true" selection-start-line="63" selection-start-column="12" selection-end-line="63" selection-end-column="46" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/common_table_website/home/templates/beliefs.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="17">
+          <caret line="1" column="16" selection-start-line="1" selection-start-column="16" selection-end-line="1" selection-end-column="16" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/common_table_website/home/templates/about.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-225">
+          <caret column="8" selection-start-column="8" selection-end-column="8" />
         </state>
       </provider>
     </entry>

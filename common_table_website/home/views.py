@@ -23,12 +23,9 @@ class PastoralList(generics.ListCreateAPIView):
     queryset = PastoralProfile.objects.all()
     serializer_class = PastorSerializer
 
-
-    """template = loader.get_template('pastoral_team.html')
-    context = {
-        'pastoral_staff': pastoral_staff,
-    }
-    return HttpResponse(template.render(context, request))"""
+def pastoral_team(request):
+    template = loader.get_template('pastoral_team.html')
+    return HttpResponse(template.render())
 
 
 class PastorDetail(generics.RetrieveUpdateDestroyAPIView):
@@ -40,12 +37,10 @@ class StaffList(generics.ListCreateAPIView):
     queryset = StaffProfile.objects.all()
     serializer_class = StaffSerializer
 
-    """staff_team = StaffProfile.objects.all().values()
+def staff(request):
     template = loader.get_template('staff_and_council.html')
-    context = {
-        'staff_team': staff_team,
-    }
-    return HttpResponse(template.render(context, request))"""
+
+    return HttpResponse(template.render())
 
 
 class StaffDetail(generics.RetrieveUpdateDestroyAPIView):

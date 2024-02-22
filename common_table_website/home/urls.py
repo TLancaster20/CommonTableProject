@@ -7,11 +7,13 @@ urlpatterns = [
     path('', views.home, name='home'),
     path('about', views.about, name='about'),
 
-    path('pastoral_team', views.PastoralList.as_view(), name="pastoral_team"),
-    path('pastoral_team/<int:pk>/', views.PastorDetail.as_view()),
+    path('pastoral_team', views.pastoral_team, name="pastoral_team"),
+    path('pastoral_list', views.PastoralList.as_view()),
+    path('pastoral_list/<int:pk>/', views.PastorDetail.as_view()),
 
-    path('staff_and_council', views.StaffList.as_view(), name="staff_and_council"),
-    path('staff_and_council/<int:pk>/', views.StaffDetail.as_view()),
+    path('staff_and_council', views.staff, name="staff_and_council"),
+    path('staff_list', views.StaffList.as_view()),
+    path('staff_list/<int:pk>/', views.StaffDetail.as_view()),
 
     path('beliefs', views.beliefs, name="beliefs"),
     path('mission_vision_values', views.mission, name="mission_vision_values"),
