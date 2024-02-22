@@ -1,9 +1,18 @@
 {% extends "base.html" %}
+
+
 {% block content %}
+
+{% load static %}
+<link rel="stylesheet" href="{% static 'css/staff.css' %}">
+
 	<h1>Meet Our Church Staff and Council Members!</h1>
-    <ul>
-        {% for x in staff_team %}
-            <li>{{x.firstname}} {{x.lastname}} {{x.pronouns}}</li>
-        {% endfor %}
-    </ul>
+	<div class="container">
+
+
+	</div>
+
+	<script src="{% static 'js/staff.js' %}"></script>
+
+
 {% endblock %}

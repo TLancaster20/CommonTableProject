@@ -12,7 +12,7 @@
 /* Style the header with a grey background and some padding */
 #navbar {
     overflow: hidden;
-    background-color: #f1f1f1;
+    background-color: #e8e3dd;
     width: 100vw;
     height: 12.5vh;
     position: fixed;
@@ -32,13 +32,9 @@
     align-items:center;
 }
 
-/* Style the logo link (notice that we set the same value of line-height and font-size to prevent the header to increase when the font gets bigger */
-#navbar a.logo {
-    font-size: 25px;
-    font-weight: bold;
+#navbar a.logo{
     padding:10px;
 }
-
 /* Float the link section to the right */
 #navbar-right {
     float: right;
@@ -50,10 +46,11 @@
     overflow: hidden;
     margin-right:50px;
     padding: 20px 0px;
+    font-size: 12.5px;
 }
 
 .dropdown .dropbtn {
-    font-size: 18px;
+    font-size: 12.5px;
     text-align: center;
     text-decoration: none;
     border: none;
@@ -106,7 +103,7 @@ footer{
     position:relative;
     margin-top: auto;
     overflow: hidden;
-    background-color: #f1f1f1;
+    background-color: #e8e3dd;
     width: 100vw;
     height: 2.5vh;
     padding: 10px;
@@ -114,7 +111,6 @@ footer{
 
 #footer-elements{
     text-align:  center;
-    font-family: Arial;
     display:flex;
     flex-direction:row;
     justify-content: center;

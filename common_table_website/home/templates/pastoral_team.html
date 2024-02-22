@@ -1,9 +1,17 @@
 {% extends "base.html" %}
+
+
 {% block content %}
+
+{% load static %}
+<link rel="stylesheet" href="{% static 'css/pastor.css' %}">
+<script src="{% static 'js/pastors.js' %}"></script>
+
 	<h1>Meet Our Pastoral Team!</h1>
-    <ul>
-        {% for x in pastoral_staff %}
-            <li>{{x.firstname}} {{x.lastname}} {{x.pronouns}}</li>
-        {% endfor %}
-    </ul>
+	<div class="container">
+
+	</div>
+
+	<script src="{% static 'js/pastors.js' %}"></script>
+
 {% endblock %}
