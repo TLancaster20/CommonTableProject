@@ -11,10 +11,10 @@
 
 /* Style the header with a grey background and some padding */
 #navbar {
-    overflow: hidden;
+    overflow: wrap;
     background-color: #e8e3dd;
     width: 100vw;
-    height: 12.5vh;
+    min-height: 12.5vh;
     position: fixed;
     top:0;
     z-index:1;
@@ -33,7 +33,7 @@
 }
 
 #navbar a.logo{
-    padding:10px;
+    padding:5px;
 }
 /* Float the link section to the right */
 #navbar-right {
@@ -44,7 +44,7 @@
 .dropdown {
     float: left;
     overflow: hidden;
-    margin-right:50px;
+    margin-right:4vw;
     padding: 20px 0px;
     font-size: 12.5px;
 }
