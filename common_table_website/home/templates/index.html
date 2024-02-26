@@ -3,19 +3,23 @@
 
 {% load static %}
 <link rel="stylesheet" href="{% static 'css/index.css' %}">
+	<a href="{% url 'meetings' %}">
+		<div class=mainone>
+			<p> Sunday // 9am & 11am // 910 South Harrison</p>
+		</div>
+	</a>
 
-	<div class=mainone>
-		<p> Sunday // 9am & 11am // 910 South Harrison</p>
-	</div>
+	<a href="{% url 'about' %}">
+		<div class=maintwo>
 
-	<div class=maintwo>
-		<h1>In <i>RVA</i> as it is in <i>heaven.</i></h1>
-		<p>Common Table was created from two churches in Richmond, Virginia, uniting as one in worship and service. In
+			<h1>In <i>RVA</i> as it is in <i>heaven.</i></h1>
+			<p>Common Table was created from two churches in Richmond, Virginia, uniting as one in worship and service. In
 			the weekly celebration of the Eucharist (Holy Communion or Lord’s Supper), we witness different people,
 			traditions, and histories joining together to bear a vibrant, diverse, and beautiful image of God. We are
 			renamed and reshaped by the table manners of Jesus Christ who invites, welcomes, nourishes, and sends us to
 			love our neighbors for the sake of mercy and equity – in RVA as it is in heaven.</p>
-	</div>
+		</div>
+	</a>
 {% endblock %}
 
 <!-- 

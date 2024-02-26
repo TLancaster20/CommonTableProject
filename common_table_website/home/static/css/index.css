@@ -1,4 +1,7 @@
-/* Old Format*/
+a{
+    text-decoration: none;
+}
+
 .mainone {
   background-image: url('../images/mainpage.png');
   background-repeat: no-repeat;

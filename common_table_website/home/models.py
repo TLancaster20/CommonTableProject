@@ -1,6 +1,23 @@
 from django.db import models
 
 # Create your models here.
+class CouncilProfile(models.Model):
+  firstname = models.CharField(max_length=255, default="")
+  lastname = models.CharField(max_length=255, default="")
+  pronouns = models.CharField(max_length=30, default="")
+  profilepic = models.ImageField(default="static/images/profdefault.png")
+  role = models.CharField(max_length=30, default="")
+  email = models.EmailField(max_length=100, default="")
+  bio = models.CharField(max_length=2000, default="")
+
+  class Meta:
+    verbose_name = "Council Profile"
+    verbose_name_plural = "Council Profiles"
+
+  def __unicode__(self):
+    return '%s %s' % (self.firstname, self.lastname)
+
+
 class StaffProfile(models.Model):
   firstname = models.CharField(max_length=255, default="")
   lastname = models.CharField(max_length=255, default="")

@@ -3,8 +3,8 @@ from django.http import HttpResponse
 from django.template import loader
 
 from rest_framework import generics
-from .models import StaffProfile, PastoralProfile, FirstTimer
-from .serializers import StaffSerializer, PastorSerializer, FirstTimerSerializer
+from .models import StaffProfile, PastoralProfile, CouncilProfile, FirstTimer
+from .serializers import StaffSerializer, PastorSerializer, CouncilSerializer, FirstTimerSerializer
 
 # Home App is designed to run and manage static pages creating the base website
 
@@ -48,6 +48,16 @@ class StaffDetail(generics.RetrieveUpdateDestroyAPIView):
     serializer_class = StaffSerializer
 
 
+class CouncilList(generics.ListCreateAPIView):
+    queryset = CouncilProfile.objects.all()
+    serializer_class = CouncilSerializer
+
+
+class CouncilDetail(generics.RetrieveUpdateDestroyAPIView):
+    queryset = CouncilProfile.objects.all()
+    serializer_class = CouncilSerializer
+
+
 def beliefs(request):
     template = loader.get_template('beliefs.html')
     return HttpResponse(template.render())
@@ -80,11 +90,6 @@ def news(request):
 
 def contact(request):
     template = loader.get_template('contact.html')
-    return HttpResponse(template.render())
-
-
-def next_steps(request):
-    template = loader.get_template('next_steps.html')
     return HttpResponse(template.render())
 
 

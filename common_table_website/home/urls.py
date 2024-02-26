@@ -14,6 +14,8 @@ urlpatterns = [
     path('staff_and_council', views.staff, name="staff_and_council"),
     path('staff_list', views.StaffList.as_view()),
     path('staff_list/<int:pk>/', views.StaffDetail.as_view()),
+    path('council_list', views.CouncilList.as_view()),
+    path('council_list/<int:pk>/', views.CouncilDetail.as_view()),
 
     path('beliefs', views.beliefs, name="beliefs"),
     path('mission_vision_values', views.mission, name="mission_vision_values"),
@@ -22,7 +24,6 @@ urlpatterns = [
     path('what_to_expect', views.expect, name='what_to_expect'),
     path('news', views.news, name="news"),
     path('contact', views.contact, name="contact"),
-    path('next_steps', views.next_steps, name="next_steps"),
     path('groups', views.groups, name="groups"),
     path('volunteer', views.volunteer, name="volunteer"),
     path('prayer', views.prayer, name="prayer"),

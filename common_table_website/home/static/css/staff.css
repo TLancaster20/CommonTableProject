@@ -5,6 +5,13 @@
     gap: 20px;
 }
 
+.new_container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+}
+
 .card {
     border: 1px solid #ddd;
     border-radius: 5px;
